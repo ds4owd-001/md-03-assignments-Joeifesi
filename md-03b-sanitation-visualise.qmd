@@ -81,13 +81,7 @@ filter(name == "Nigeria",
 
 ## Task 4
 
-1.  Use the `count()` function with the data you created in Task 3 to verify that year 2000 and 2020 remained in the year variable.
-
-```{r}
-
-sanitation_NGA |> 
-count(year)
-```
+1.  Use the `count()` function with the data you created in Task 3 to verify that year 2000 and 2020 remained in the year variable
 
 ## Task 5
 
@@ -109,10 +103,13 @@ geom_text(aes(label = round(percent, 1)),
 ```
 
 ```{r}
-#ggplot(data =gapminder_summary_2007 ,
-      # mapping = aes(x = continent, 
-                      #y = count)) +
-  #geom_col()
+ggplot(data = sanitation_NGA,
+       mapping = aes(x = residence, y = percent,
+                   fill = varname_long))+
+  geom_col()+
+  facet_wrap(~year)
+  
+
 
 ```
 
