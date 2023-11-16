@@ -1,7 +1,7 @@
 ---
 title: "Data transformation with dplyr"
 subtitle: "Practice with penguins"
-author: ""
+author: "JOSEPHINE ONUABUCHI EZEKWEREMBAH NEE UDEIGWE"
 format:
   html:
     embed-resources: true
@@ -35,13 +35,17 @@ glimpse(penguins)
 Use `filter()` to create a subset from `penguins` that only contains observations for Adelie penguins.
 
 ```{r}
+penguins_Adelie <- penguins|> 
+  filter(observations == penguins_Adelie) 
 
 ```
 
-Use `filter()` to create a subset from `penguins` that only contains observations where body mass is less than or equal to 2900 g.
+Use `filter()` to create a subset from `penguins` that only contains observations where body mass is less than or equal to 2900 g
 
 ```{r}
-
+penguins <-penguins|> 
+"penguins body-mass <penguins|> 
+ filter(penguins == body_mass<="2900g)
 ```
 
 Use `filter()` to create a subset from `penguins` that only contains observations for Adelie penguins with a bill length greater than 40 mm.
